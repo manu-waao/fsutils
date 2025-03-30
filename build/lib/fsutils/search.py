@@ -71,9 +71,11 @@ def findInFolder(targetType: int, targetName: str, rootPath: str = "C:\\") -> Li
     with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         futures = []
         for dirPath, dirNames, _ in os.walk(rootPath):
+            # Submit search for current directory
             futures.append(executor.submit(
                 searchDirectory, targetType, targetName, dirPath
             ))
+            # Submit searches for all subdirectories
             for subDir in dirNames:
                 futures.append(executor.submit(
                     searchDirectory, targetType, targetName, 

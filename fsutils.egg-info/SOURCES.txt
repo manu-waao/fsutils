@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+fsutils/__init__.py
+fsutils/conversion.py
+fsutils/disp.py
+fsutils/fileops.py
+fsutils/search.py
+fsutils.egg-info/PKG-INFO
+fsutils.egg-info/SOURCES.txt
+fsutils.egg-info/dependency_links.txt
+fsutils.egg-info/entry_points.txt
+fsutils.egg-info/requires.txt
+fsutils.egg-info/top_level.txt
